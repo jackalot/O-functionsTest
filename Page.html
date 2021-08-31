@@ -31,10 +31,9 @@
             if(typeof string === "string")
             {
                 let Letter = string.slice(0, 1);
+                Letter.toUpperCase(); // This isnt capitalizing my strings and I dont knowm why
                 let RestOfString = string.slice(1, string.length);
-                Letter.toUpperCase();
                 console.log(Letter);
-                RestOfString.toLowerCase();
                 let newString = Letter + RestOfString
                 return newString;
             }
@@ -43,6 +42,6 @@
                 return "thats not a string"
             }
         }
-        console.log(Capitalize("text"));
+        console.log(Capitalize("hello world"));
     </script>
 </html>
