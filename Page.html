@@ -26,6 +26,7 @@
                 return "One of your arguments is not a number"
             }
         }
+        
         //Arrow function 
         let Capitalize = (string) => {
             if(typeof string === "string")
@@ -33,7 +34,6 @@
                 let Letter = string.slice(0, 1);
                 let CapitalLetter = Letter.toUpperCase(); // This isnt capitalizing my strings and I dont knowm why
                 let RestOfString = string.slice(1, string.length);
-                console.log(CapitalLetter);
                 let newString = CapitalLetter + RestOfString
                 return newString;
             }
@@ -43,5 +43,19 @@
             }
         }
         console.log(Capitalize("hello world"));
+
+        //Arrow function agian since I should get used to them, also, remember they are also expression functions
+        let LastLetter = (string) => {
+            if(typeof string === "string")
+            {
+               let Letter = string.slice(string.length - 1, string.length);
+               return Letter;
+            }
+            else
+            {
+                return "thats not a string";
+            }
+        }
+        console.log(LastLetter("Goodbye World"));
     </script>
 </html>
