@@ -13,9 +13,9 @@
              }
         }
         console.log(add7(3));
-        console.log(multiply(3, 6));
+        console.log(Multiply(3, 6));
         //Declaration!
-        function multiply(num1, num2) {
+        function Multiply(num1, num2) {
             //If both are numbers
             if(typeof num1 === "number" && typeof num2 === "number")
             {
@@ -26,5 +26,23 @@
                 return "One of your arguments is not a number"
             }
         }
+        //Arrow function 
+        let Capitalize = (string) => {
+            if(typeof string === "string")
+            {
+                let Letter = string.slice(0, 1);
+                let RestOfString = string.slice(1, string.length);
+                Letter.toUpperCase();
+                console.log(Letter);
+                RestOfString.toLowerCase();
+                let newString = Letter + RestOfString
+                return newString;
+            }
+            else
+            {
+                return "thats not a string"
+            }
+        }
+        console.log(Capitalize("text"));
     </script>
 </html>
